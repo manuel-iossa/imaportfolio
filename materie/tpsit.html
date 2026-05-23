@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contenuto="width=device-width, initial-scale=1.0">
+    <title>TPSIT — Iossa Manuel Andrea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel = "stylesheet" href = "../stile/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <a class="nav-brand" href="../index.html">Iossa Manuel Andrea</a>
+    <button class="hamburger" id="ham"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#presentazione"><i class="fa-solid fa-user"></i> Chi sono</a></li>
+        <li><a href="../index.html#competenze"><i class="fa-solid fa-code"></i> Competenze</a></li>
+        <li><a href="../index.html#progetti"><i class="fa-solid fa-folder-open"></i> Progetti</a></li>
+        <li>
+            <a class="dropdown-toggle" href="#" data-dd="dd1">Materie</a>
+            <ul class="dropdown-menu" id="dd1">
+                <li><a href="italiano.html"><i class="fa-solid fa-book"></i> Italiano</a></li>
+                <li><a href="storia.html"><i class="fa-solid fa-landmark"></i> Storia</a></li>
+                <li><a href="inglese.html"><i class="fa-solid fa-language"></i> Inglese</a></li>
+                <li><a href="informatica.html"><i class="fa-solid fa-laptop-code"></i> Informatica</a></li>
+                <li><a href="sistemiEReti.html"><i class="fa-solid fa-house-signal"></i> Sistemi e Reti</a></li>
+                <li><a href="tpsit.html"><i class="fa-brands fa-android"></i> TPSIT</a></li>
+                <li><a href="ia.html"><i class="fa-solid fa-robot"></i> IA</a></li>
+                <li><a href="gpoi.html"><i class="fa-solid fa-chart-area"></i> GPOI</a></li>
+                <li><a href="matematica.html"><i class="fa-solid fa-calculator"></i> Matematica</a></li>
+            </ul>
+        </li>
+        <li><a href="../pcto.html"><i class="fa-solid fa-briefcase"></i> FSL</a></li>
+        <li><a href="educazioneCivica.html"><i class="fa-solid fa-globe"></i> Ed. Civica</a></li>
+    </ul>
+</nav>
+
+<div class="page-hero">
+    <h1>TPSIT</h1>
+    <p>Programma svolto nell'anno scolastico 2025/26.</p>
+</div>
+
+<main>
+
+    <div class="argomento-section">
+        <div class="argomento-section-header">
+            <h2 class="argomento-section-title">Ingegneria del software</h2>
+        </div>
+        <div class="contenuto-grid">
+            <div class="contenuto-card">
+                <div class="contenuto-card-text">L'Ingegneria del Software è la disciplina che applica un approccio sistematico, disciplinato e quantificabile allo sviluppo, all'operazione e alla manutenzione del software.
+Non si tratta solo di scrivere codice, ma di gestire la complessità e garantire la qualità e l'affidabilità di un prodotto nel tempo.
+Ogni progetto software segue un ciclo di vita composto da fasi fondamentali che sono:
+<br>
+-Analisi dei requisiti;
+<br>
+-Progettazione;
+<br>
+-Implementazione;
+<br>
+-Testing;
+<br>
+-Distruìibuzione;
+<br>
+-Manutenzione;
+<br>
+L'ingegneria del software usa vari modelli per la progettazione di sfotware, dove in ogni modello cambia l'approccio e anche il ciclo di vita.
+Ecco alcuni modelli:
+<br>
+-Modello a cascata;
+<br>
+-Modello a spirale;
+<br>
+-RAD (Rapid Application Development);
+<br>
+-UP (Unified Process) / RUP (Rational Unified Process);
+<br>
+-Modello Agile e Scrum ed i suoi framework Kanban e XP</div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="argomento-section">
+        <div class="argomento-section-header">
+            <h2 class="argomento-section-title">Programmazione concorrente - Java</h2>
+        </div>
+        <div class="contenuto-grid">
+            <div class="contenuto-card">
+                <div class="contenuto-card-text">In informatica, la programmazione concorrente è la tecnica che permette a più attività (thread) di essere eseguite “in parallelo” o comunque in modo interlacciato, andando ad utilizzare delle risorse condivise.
+La parte in cui i thread interagiscono con le risorse condivise viene chiamata sezione critica e se non viene gestita correttamente si può incorrere in problemi come:
+<br>
+-Race Condition: due thread accedono contemporaneamente ai dati causando inconsistenze;
+<br>
+-Deadlock: due o più thread restano bloccati aspettando risorse che non si libereranno mai;
+<br>
+-Starvation: un thread non ottiene mai la CPU o una risorsa;
+<br>
+-Interferenze: un thread modifica dati mentre un altro li sta usando.
+<br>
+Per gestire queste problematiche vengono usate dei costrutti come il synchronized, oggetti come i semafori ecc..
+<br>
+Per questo argomento abbiamo creato un documento in cui vengono analizzati i 4 problemi classici della concorrenza.</div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="section-divider">
+
+
+    
+
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-brand">Iossa Manuel Andrea</div>
+</footer>
+
+<script src="../script/scriptMaterie.js"></script>
+</body>
+</html>
