@@ -1,27 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" contenuto="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Italiano — Iossa Manuel Andrea</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel = "stylesheet" href = "../stile/style.css">
+    <link rel="stylesheet" href="../stile/style.css">
 </head>
 <body>
-
-<!-- NAV -->
+ 
 <nav>
     <a class="nav-brand" href="../index.html">Iossa Manuel Andrea</a>
-    <button class="hamburger" id="ham"><i class="fa-solid fa-bars"></i></button>
-    <ul class="nav-links" id="navLinks">
+    <button class="hamburger" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navLinks"
+            aria-controls="navLinks"
+            aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="nav-links collapse" id="navLinks">
         <li><a href="../index.html#presentazione"><i class="fa-solid fa-user"></i> Chi sono</a></li>
         <li><a href="../index.html#competenze"><i class="fa-solid fa-code"></i> Competenze</a></li>
         <li><a href="../index.html#progetti"><i class="fa-solid fa-folder-open"></i> Progetti</a></li>
         <li>
-            <a class="dropdown-toggle" href="#" data-dd="dd1">Materie</a>
-            <ul class="dropdown-menu" id="dd1">
+            <a class="dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#dd1">Materie</a>
+            <ul class="dropdown-menu collapse" id="dd1">
                 <li><a href="italiano.html"><i class="fa-solid fa-book"></i> Italiano</a></li>
                 <li><a href="storia.html"><i class="fa-solid fa-landmark"></i> Storia</a></li>
                 <li><a href="inglese.html"><i class="fa-solid fa-language"></i> Inglese</a></li>
@@ -37,14 +43,14 @@
         <li><a href="educazioneCivica.html"><i class="fa-solid fa-globe"></i> Ed. Civica</a></li>
     </ul>
 </nav>
-
+ 
 <div class="page-hero">
-    <h1>Italiano<br></h1>
+    <h1>Italiano</h1>
     <p>Programma svolto nell'anno scolastico 2025/26.</p>
 </div>
-
+ 
 <main>
-
+ 
     <div class="argomento-section">
         <div class="argomento-section-header">
             <h2 class="argomento-section-title">Positivismo</h2>
@@ -55,9 +61,9 @@
             </div>
         </div>
     </div>
-
+ 
     <hr class="section-divider">
-
+ 
     <div class="argomento-section">
         <div class="argomento-section-header">
             <h2 class="argomento-section-title">Naturalismo</h2>
@@ -68,9 +74,9 @@
             </div>
         </div>
     </div>
-
+ 
     <hr class="section-divider">
-
+ 
     <div class="argomento-section">
         <div class="argomento-section-header">
             <h2 class="argomento-section-title">Naturalismo - Emile Zola</h2>
@@ -89,18 +95,17 @@
             </div>
             <div class="opere-item">
                 <div class="opere-icon"><i class="fa-solid fa-book"></i></div>
-                <div><div class="opere-title">La rovina di una famiglia operaia</div><div class="opere-type"></div></div>
+                <div><div class="opere-title">La rovina di una famiglia operaia</div></div>
             </div>
             <div class="opere-item">
                 <div class="opere-icon"><i class="fa-solid fa-book"></i></div>
-                <div><div class="opere-title">Il crollo di Gervaise</div><div class="opere-type"></div></div>
+                <div><div class="opere-title">Il crollo di Gervaise</div></div>
             </div>
         </div>
-
     </div>
-
+ 
     <hr class="section-divider">
-
+ 
     <div class="argomento-section">
         <div class="argomento-section-header">
             <h2 class="argomento-section-title">Verismo</h2>
@@ -111,9 +116,9 @@
             </div>
         </div>
     </div>
-
+ 
     <hr class="section-divider">
-
+ 
     <div class="argomento-section">
         <div class="argomento-section-header">
             <h2 class="argomento-section-title">Giovanni Verga</h2>
@@ -123,7 +128,7 @@
             <div>
                 <div class="autore-name">Giovanni Verga</div>
                 <div class="autore-years">1840 — 1922</div>
-                <div class="autore-bio">Giovanni Verga è uno dei massimi esponenti del verismo italiano. Compose Vita Dei Campi, una raccolta di 8 novelle.Compose anche il Ciclo Dei Vinti, una raccolta di romanzi che non riuscì mai a completare</div>
+                <div class="autore-bio">Giovanni Verga è uno dei massimi esponenti del verismo italiano. Compose Vita Dei Campi, una raccolta di 8 novelle. Compose anche il Ciclo Dei Vinti, una raccolta di romanzi che non riuscì mai a completare.</div>
             </div>
         </div>
         <div class="opere-list">
@@ -161,9 +166,9 @@
             </div>
         </div>
     </div>
-
+ 
     <hr class="section-divider">
-
+ 
     <div class="argomento-section">
         <div class="argomento-section-header">
             <h2 class="argomento-section-title">Decadentismo</h2>
@@ -174,9 +179,9 @@
             </div>
         </div>
     </div>
-
+ 
     <hr class="section-divider">
-
+ 
     <div class="argomento-section">
         <div class="argomento-section-header">
             <h2 class="argomento-section-title">Oscar Wilde</h2>
@@ -186,7 +191,6 @@
             <div>
                 <div class="autore-name">Oscar Wilde</div>
                 <div class="autore-years">1854 - 1900</div>
-                <div class="autore-bio"></div>
             </div>
         </div>
         <div class="opere-list">
@@ -200,9 +204,9 @@
             </div>
         </div>
     </div>
-
+ 
     <hr class="section-divider">
-
+ 
     <div class="argomento-section">
         <div class="argomento-section-header">
             <h2 class="argomento-section-title">Giovanni Pascoli</h2>
@@ -212,7 +216,6 @@
             <div>
                 <div class="autore-name">Giovanni Pascoli</div>
                 <div class="autore-years">1855 - 1912</div>
-                <div class="autore-bio"></div>
             </div>
         </div>
         <div class="opere-list">
@@ -238,9 +241,9 @@
             </div>
         </div>
     </div>
-
+ 
     <hr class="section-divider">
-
+ 
     <div class="argomento-section">
         <div class="argomento-section-header">
             <h2 class="argomento-section-title">Gabriele D'Annunzio</h2>
@@ -250,7 +253,7 @@
             <div>
                 <div class="autore-name">Gabriele D'Annunzio</div>
                 <div class="autore-years">1863 — 1938</div>
-                <div class="autore-bio">Scrittore, poeta e politico italiano, figura chiave del Decadentismo. La sua vita fu essa stessa un'opera d'arte: l'estetismo vissuto, la guerra come esperienza estetica, il mito del superuomo. La sua produzione attraversa romanzi, poesie, tragedie e orazioni politiche, lasciando un'impronta indelebile sulla cultura italiana del Novecento.</div>
+                <div class="autore-bio">Scrittore, poeta e politico italiano, figura chiave del Decadentismo. La sua vita fu essa stessa un'opera d'arte: l'estetismo vissuto, la guerra come esperienza estetica, il mito del superuomo.</div>
             </div>
         </div>
         <div class="opere-list">
@@ -272,10 +275,9 @@
             </div>
         </div>
     </div>
-
+ 
     <hr class="section-divider">
-
-    <!-- 06 PIRANDELLO -->
+ 
     <div class="argomento-section">
         <div class="argomento-section-header">
             <h2 class="argomento-section-title">Luigi Pirandello</h2>
@@ -285,24 +287,24 @@
             <div>
                 <div class="autore-name">Luigi Pirandello</div>
                 <div class="autore-years">1867 — 1936 · Premio Nobel 1934</div>
-                <div class="autore-bio">Drammaturgo e narratore siciliano, Premio Nobel per la letteratura nel 1934. La sua opera è dominata dal relativismo conoscitivo: la realtà non esiste in forma assoluta, ogni individuo la percepisce in modo diverso. La crisi d'identità, la maschera sociale e il conflitto tra essere e apparire sono i temi centrali di una produzione vastissima che ha rivoluzionato il teatro mondiale.</div>
+                <div class="autore-bio">Drammaturgo e narratore siciliano, Premio Nobel per la letteratura nel 1934. La sua opera è dominata dal relativismo conoscitivo: la realtà non esiste in forma assoluta, ogni individuo la percepisce in modo diverso.</div>
             </div>
         </div>
         <div class="contenuto-grid">
             <div class="contenuto-card">
                 <div class="contenuto-card-label">Filosofia</div>
                 <div class="contenuto-card-title">Relativismo e umorismo</div>
-                <div class="contenuto-card-text">L'"avvertimento del contrario" si trasforma in "sentimento del contrario": si ride di qualcosa, poi si capisce la tragedia sottostante. L'umorismo pirandelliano è amaro e profondo.</div>
+                <div class="contenuto-card-text">L'"avvertimento del contrario" si trasforma in "sentimento del contrario": si ride di qualcosa, poi si capisce la tragedia sottostante.</div>
             </div>
             <div class="contenuto-card">
                 <div class="contenuto-card-label">Tema</div>
                 <div class="contenuto-card-title">La maschera e l'identità</div>
-                <div class="contenuto-card-text">Ogni individuo indossa maschere diverse a seconda del contesto sociale. L'io è fluido, contraddittorio, impossibile da definire. Chi siamo davvero dietro le maschere?</div>
+                <div class="contenuto-card-text">Ogni individuo indossa maschere diverse a seconda del contesto sociale. L'io è fluido, contraddittorio, impossibile da definire.</div>
             </div>
             <div class="contenuto-card">
                 <div class="contenuto-card-label">Teatro</div>
                 <div class="contenuto-card-title">Il metateatro</div>
-                <div class="contenuto-card-text">La rottura della quarta parete, i personaggi che invadono la scena, il confine tra finzione e realtà che svanisce. Una rivoluzione del linguaggio teatrale.</div>
+                <div class="contenuto-card-text">La rottura della quarta parete, i personaggi che invadono la scena, il confine tra finzione e realtà che svanisce.</div>
             </div>
         </div>
         <div class="opere-list">
@@ -332,9 +334,9 @@
             </div>
         </div>
     </div>
-
+ 
     <hr class="section-divider">
-
+ 
     <div class="argomento-section">
         <div class="argomento-section-header">
             <h2 class="argomento-section-title">Italo Svevo</h2>
@@ -344,7 +346,7 @@
             <div>
                 <div class="autore-name">Italo Svevo</div>
                 <div class="autore-years">1861 — 1928</div>
-                <div class="autore-bio">Pseudonimo di Aron Ettore Schmitz, triestino di origini ebraiche e austriache. Influenzato da Freud, Schopenhauer e Darwin, è considerato il padre del romanzo psicologico italiano. Il suo protagonista tipico è l'"inetto", incapace di adattarsi alla società, che trova nel racconto di sé stesso una forma di autoanalisi distorta e inaffidabile.</div>
+                <div class="autore-bio">Pseudonimo di Aron Ettore Schmitz, triestino di origini ebraiche e austriache. Influenzato da Freud, Schopenhauer e Darwin, è considerato il padre del romanzo psicologico italiano.</div>
             </div>
         </div>
         <div class="opere-list">
@@ -355,11 +357,12 @@
             <div class="opere-item">
                 <div class="opere-icon"><i class="fa-solid fa-book"></i></div>
                 <div><div class="opere-title">La morte del padre</div><div class="opere-type">tratto da La coscienza di Zeno</div></div>
-                <div class="opere-year">1892</div>
             </div>
         </div>
     </div>
-
+ 
+    <hr class="section-divider">
+ 
     <div class="argomento-section">
         <div class="argomento-section-header">
             <h2 class="argomento-section-title">Ermetismo</h2>
@@ -370,9 +373,9 @@
             </div>
         </div>
     </div>
-
+ 
     <hr class="section-divider">
-
+ 
     <div class="argomento-section">
         <div class="argomento-section-header">
             <h2 class="argomento-section-title">Giuseppe Ungaretti</h2>
@@ -382,21 +385,20 @@
             <div>
                 <div class="autore-name">Giuseppe Ungaretti</div>
                 <div class="autore-years">1888 - 1970</div>
-                <div class="autore-bio"></div>
             </div>
         </div>
         <div class="opere-list">
             <div class="opere-item">
                 <div class="opere-icon"><i class="fa-solid fa-book"></i></div>
-                <div><div class="opere-title">Soldati</div><div class="opere-type">tratto da L'Allgeria</div></div>
+                <div><div class="opere-title">Soldati</div><div class="opere-type">tratto da L'Allegria</div></div>
             </div>
             <div class="opere-item">
                 <div class="opere-icon"><i class="fa-solid fa-book"></i></div>
-                <div><div class="opere-title">Veglia</div><div class="opere-type">tratto da L'Allgeria</div></div>
+                <div><div class="opere-title">Veglia</div><div class="opere-type">tratto da L'Allegria</div></div>
             </div>
             <div class="opere-item">
                 <div class="opere-icon"><i class="fa-solid fa-book"></i></div>
-                <div><div class="opere-title">Mattina</div><div class="opere-type">tratto da L'Allgeria</div></div>
+                <div><div class="opere-title">Mattina</div><div class="opere-type">tratto da L'Allegria</div></div>
             </div>
             <div class="opere-item">
                 <div class="opere-icon"><i class="fa-solid fa-book"></i></div>
@@ -408,15 +410,13 @@
             </div>
         </div>
     </div>
-
-
+ 
 </main>
-
-<!-- FOOTER -->
+ 
 <footer>
     <div class="footer-brand">Iossa Manuel Andrea</div>
 </footer>
-
-<script src="../script/scriptMaterie.js"></script>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

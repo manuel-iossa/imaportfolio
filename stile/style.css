@@ -124,7 +124,6 @@
         }
 
         @media (max-width: 900px) {
-            .hamburger { display: block; }
             .nav-links {
                 display: none;
                 position: fixed;
@@ -137,7 +136,7 @@
                 gap: 0;
                 box-shadow: 0 8px 20px rgba(124,58,237,0.2);
             }
-            .nav-links.open { display: flex; }
+            .nav-links.show { display: flex; }
             .nav-links a { padding: 0.65rem 1.5rem; }
             .dropdown-menu {
                 position: static;
@@ -148,13 +147,43 @@
                 padding: 0;
                 margin-left: 1.5rem;
             }
-            li.open > .dropdown-menu { display: block; }
+            li.show > .dropdown-menu { display: block; }
             li:hover > .dropdown-menu { display: none; }
 
             .progetto-body { grid-template-columns: 1fr; }
             .progetto-galleria.double,
             .progetto-galleria.triple { grid-template-columns: 1fr; }
             .progetto-galleria.triple .galleria-item:first-child { grid-row: auto; }
+                        /* Menu principale: nascosto di default, visibile con .show */
+            .nav-links.collapse:not(.show) { display: none !important; }
+            .nav-links.collapse.show {
+                display: flex !important;
+                flex-direction: column;
+                align-items: flex-start;
+                position: fixed;
+                top: var(--nav);
+                left: 0; right: 0;
+                background: var(--primario);
+                padding: 1rem 0;
+                box-shadow: 0 8px 20px rgba(124,58,237,0.2);
+                z-index: 999;
+            }
+
+            /* Dropdown materie: nascosto di default, visibile con .show */
+            .dropdown-menu.collapse:not(.show) { display: none !important; }
+            .dropdown-menu.collapse.show {
+                display: block !important;
+                position: static !important;
+                background: rgba(0,0,0,0.15);
+                border-radius: 0;
+                box-shadow: none;
+                padding: 0;
+                margin-left: 1.5rem;
+                min-width: unset;
+            }
+
+            /* Hamburger visibile su mobile */
+            .hamburger { display: block !important; }
         }
 
         /* ── HERO ── */
@@ -182,8 +211,6 @@
             font-weight: 500;
             margin-bottom: 2rem;
             width: fit-content;
-            opacity: 0;
-            animation: fadeUp 0.7s 0.2s forwards;
         }
 
         .hero-badge i { font-size: 0.7rem; }
@@ -194,8 +221,6 @@
             line-height: 1.05;
             letter-spacing: -0.02em;
             color: var(--testo);
-            opacity: 0;
-            animation: fadeUp 0.7s 0.35s forwards;
         }
 
         .hero-name span { color: var(--primario); }
@@ -207,8 +232,6 @@
             margin-top: 1.5rem;
             max-width: 520px;
             line-height: 1.7;
-            opacity: 0;
-            animation: fadeUp 0.7s 0.5s forwards;
         }
 
         .hero-cta {
@@ -216,8 +239,6 @@
             gap: 1rem;
             margin-top: 2.5rem;
             flex-wrap: wrap;
-            opacity: 0;
-            animation: fadeUp 0.7s 0.65s forwards;
         }
 
         .btn {
@@ -514,13 +535,6 @@
             color: var(--testo-secondario);
         }
 
-        /* ── ANIMATIONS ── */
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(24px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-
-
         /* ── RESPONSIVE ── */
         @media (max-width: 768px) {
             section, #hero { padding: 4rem 1.5rem; }
@@ -532,14 +546,6 @@
         /* ── argomento SECTION ── */
         .argomento-section {
             margin-bottom: 5rem;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s, transform 0.6s;
-        }
-
-        .argomento-section.visible {
-            opacity: 1;
-            transform: translateY(0);
         }
 
         .argomento-section-header {
@@ -581,7 +587,6 @@
             border: 1px solid var(--bordi);
             border-radius: 16px;
             padding: 1.4rem;
-            transition: transform 0.2s, box-shadow 0.2s, bordi-color 0.2s;
         }
 
         .contenuto-card-label {
@@ -618,7 +623,6 @@
             gap: 1.5rem;
             align-items: start;
             margin-bottom: 1.2rem;
-            transition: box-shadow 0.2s;
         }
 
         .autore-avatar {
@@ -638,7 +642,6 @@
             font-weight: 700;
             margin-bottom: 0.2rem;
         }
-
 
         .autore-bio {
             font-size: 1rem;
@@ -661,7 +664,6 @@
             background: var(--surface);
             border: 1px solid var(--bordi);
             border-radius: 14px;
-            transition: bordi-color 0.2s, transform 0.2s;
         }
 
         .opere-icon {
@@ -747,7 +749,6 @@
             margin-bottom: 2rem;
         }
 
-
         /* ── MAIN ── */
         main {
             padding: 4rem 5rem 6rem;
@@ -785,7 +786,6 @@
             gap: 0.9rem;
         }
 
- 
         .comp-icon {
             width: 40px;
             height: 40px;
@@ -822,8 +822,7 @@
             flex-direction: column;
             gap: 1rem;
         }
- 
- 
+
         .materiaEducazioneCivica-card-top {
             display: flex;
             align-items: center;
@@ -864,7 +863,6 @@
             font-size: 1.1rem;
             font-weight: 600;
             color: var(--testo);
-            padding-left: 0.2rem;
             border-left: 3px solid var(--primario);
             padding-left: 0.8rem;
             line-height: 1.35;
@@ -888,14 +886,6 @@
         /* ── progetto BLOCK ── */
         .progetto-block {
             margin-bottom: 6rem;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s, transform 0.6s;
-        }
- 
-        .progetto-block.visible {
-            opacity: 1;
-            transform: translateY(0);
         }
  
         /* ── progetto HEADER ── */
@@ -906,7 +896,6 @@
             margin-bottom: 2rem;
         }
 
- 
         .progetto-header-info { flex: 1; }
  
         .progetto-title {
@@ -937,20 +926,17 @@
             font-weight: 600;
             color: var(--primario);
         }
- 
 
         .progetto-galleria {
             display: grid;
             gap: 1rem;
             margin-bottom: 2rem;
         }
- 
- 
+
         .progetto-galleria.double {
             grid-template-columns: 1fr 1fr;
         }
 
- 
         .galleria-item {
             border-radius: 16px;
             overflow: hidden;
@@ -964,10 +950,8 @@
             height: 100%;
             object-fit: cover;
             display: block;
-            transition: transform 0.4s;
         }
 
- 
         /* ── progetto BODY ── */
         .progetto-body {
             display: grid;
@@ -991,3 +975,38 @@
             line-height: 1.8;
             margin-bottom: 1.2rem;
         }
+
+        /* ── BOOTSTRAP COLLAPSE OVERRIDE ── */
+
+        /*
+         * Bootstrap JS usa la classe .collapse per nascondere e .show per mostrare.
+         * Siccome non importiamo il CSS di Bootstrap, definiamo noi .collapse.
+         * Su desktop sovrascriviamo tutto per mantenere il comportamento hover originale.
+         */
+
+        /* Definizione base di .collapse (necessaria perché non usiamo il CSS di Bootstrap) */
+        .collapse { display: none; }
+        .collapse.show { display: block; }
+
+        /* Su desktop: navbar sempre visibile, dropdown gestito da hover CSS */
+        @media (min-width: 901px) {
+            /* Il menu principale è sempre visibile, indipendentemente da .show */
+            .nav-links.collapse,
+            .nav-links.collapse.show {
+                display: flex !important;
+            }
+
+            /* Il dropdown torna al comportamento hover originale */
+            .dropdown-menu.collapse,
+            .dropdown-menu.collapse.show {
+                display: none !important;
+            }
+            li:hover > .dropdown-menu {
+                display: block !important;
+            }
+
+            /* Nascondi hamburger su desktop */
+            .hamburger { display: none !important; }
+        }
+
+        

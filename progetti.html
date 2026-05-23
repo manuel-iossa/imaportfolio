@@ -11,17 +11,22 @@
 </head>
 <body>
  
-<!-- NAV -->
 <nav>
-    <a class="nav-brand" href="index.html">Iossa Manuel Andrea</a>
-    <button class="hamburger" id="ham"><i class="fa-solid fa-bars"></i></button>
-    <ul class="nav-links" id="navLinks">
-        <li><a href="index.html#about"><i class="fa-solid fa-user"></i> Chi sono</a></li>
-        <li><a href="index.html#competenze-tech"><i class="fa-solid fa-code"></i> Competenze</a></li>
-        <li><a href="index.html#progetti"><i class="fa-solid fa-folder-open"></i> Progetti</a></li>
+    <a class="nav-brand" href="#">Iossa Manuel Andrea</a>
+    <button class="hamburger" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navLinks"
+            aria-controls="navLinks"
+            aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="nav-links collapse" id="navLinks">
+        <li><a href="#presentazione"><i class="fa-solid fa-user"></i> Chi sono</a></li>
+        <li><a href="#competenze"><i class="fa-solid fa-code"></i> Competenze</a></li>
+        <li><a href="#progetti"><i class="fa-solid fa-folder-open"></i> Progetti</a></li>
         <li>
-            <a class="dropdown-toggle" href="#" data-dd="dd1">Materie</a>
-            <ul class="dropdown-menu" id="dd1">
+            <a class="dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#dd1">Materie</a>
+            <ul class="dropdown-menu collapse" id="dd1">
                 <li><a href="materie/italiano.html"><i class="fa-solid fa-book"></i> Italiano</a></li>
                 <li><a href="materie/storia.html"><i class="fa-solid fa-landmark"></i> Storia</a></li>
                 <li><a href="materie/inglese.html"><i class="fa-solid fa-language"></i> Inglese</a></li>
@@ -33,8 +38,8 @@
                 <li><a href="materie/matematica.html"><i class="fa-solid fa-calculator"></i> Matematica</a></li>
             </ul>
         </li>
-        <li><a href="materie/educazioneCivica.html"><i class="fa-solid fa-globe"></i> Ed. Civica</a></li>
         <li><a href="pcto.html"><i class="fa-solid fa-briefcase"></i> FSL</a></li>
+        <li><a href="materie/educazioneCivica.html"><i class="fa-solid fa-globe"></i> Ed. Civica</a></li>
     </ul>
 </nav>
  
@@ -256,6 +261,6 @@
     <div class="footer-brand">Iossa Manuel Andrea</div>
 </footer>
  
-<script src = "script/scriptProgetti.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

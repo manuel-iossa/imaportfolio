@@ -11,17 +11,22 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
     <a class="nav-brand" href="../index.html">Iossa Manuel Andrea</a>
-    <button class="hamburger" id="ham"><i class="fa-solid fa-bars"></i></button>
-    <ul class="nav-links" id="navLinks">
+    <button class="hamburger" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navLinks"
+            aria-controls="navLinks"
+            aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="nav-links collapse" id="navLinks">
         <li><a href="../index.html#presentazione"><i class="fa-solid fa-user"></i> Chi sono</a></li>
         <li><a href="../index.html#competenze"><i class="fa-solid fa-code"></i> Competenze</a></li>
         <li><a href="../index.html#progetti"><i class="fa-solid fa-folder-open"></i> Progetti</a></li>
         <li>
-            <a class="dropdown-toggle" href="#">Materie</a>
-            <ul class="dropdown-menu" id="dd1">
+            <a class="dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#dd1">Materie</a>
+            <ul class="dropdown-menu collapse" id="dd1">
                 <li><a href="italiano.html"><i class="fa-solid fa-book"></i> Italiano</a></li>
                 <li><a href="storia.html"><i class="fa-solid fa-landmark"></i> Storia</a></li>
                 <li><a href="inglese.html"><i class="fa-solid fa-language"></i> Inglese</a></li>
@@ -78,7 +83,7 @@
         <div class="contenuto-grid">
             <div class="contenuto-card">
                 <div class="contenuto-card-text">Fu un conflitto tra Regno di Sardegna (sostenuto dalla Francia) e Austria, provocato da Cavour per l'unificazione italiana.
-<br>Vide vittorie franco-piemontesi (Magenta, Solferino e San Martino) e portò all'annessione della Lombardia al Piemonte dopo l'Armistizio di Villafranca, mentre Toscana ed Emilia si annetterono tramite plebiscito, ponendo le basi per il futuro Regno d'Italia.</div>
+                <br>Vide vittorie franco-piemontesi (Magenta, Solferino e San Martino) e portò all'annessione della Lombardia al Piemonte dopo l'Armistizio di Villafranca, mentre Toscana ed Emilia si annetterono tramite plebiscito, ponendo le basi per il futuro Regno d'Italia.</div>
             </div>
         </div>
     </div>
@@ -92,8 +97,9 @@
         <div class="contenuto-grid">
             <div class="contenuto-card">
                 <div class="contenuto-card-text">Fu un conflitto via terra e via mare tra l'esercito italiano e quello austriaco, le battaglie hanno un esito incerto ma alla fine il vento viene annesso all'Italia.
-Garibaldi provò anche a conquistare il trentino ma all'ordine di ritirarsi lui rispose con "Obbedisco".
-Oltre al veneto venne annesso anche lo Stato Della Chiesa con la breccia nella Porta Pia grazie ai bersaglieri.</div>
+                    Garibaldi provò anche a conquistare il trentino ma all'ordine di ritirarsi lui rispose con "Obbedisco".
+                    Oltre al veneto venne annesso anche lo Stato Della Chiesa con la breccia nella Porta Pia grazie ai bersaglieri.
+                </div>
             </div>
         </div>
     </div>
@@ -107,7 +113,7 @@ Oltre al veneto venne annesso anche lo Stato Della Chiesa con la breccia nella P
         <div class="contenuto-grid">
             <div class="contenuto-card">
                 <div class="contenuto-card-text">La "questione meridionale" si riferisce al persistente divario socio-economico tra il Nord e il Sud Italia,
-emerso dopo l'Unità nel 1861 e legato all'arretratezza storica del Meridione, caratterizzata da problemi di sviluppo, infrastrutture, istruzione e disoccupazione, che continuano a influenzare il Paese, nonostante i tentativi di risoluzione come la Cassa per il Mezzogiorno.</div>
+                    emerso dopo l'Unità nel 1861 e legato all'arretratezza storica del Meridione, caratterizzata da problemi di sviluppo, infrastrutture, istruzione e disoccupazione, che continuano a influenzare il Paese, nonostante i tentativi di risoluzione come la Cassa per il Mezzogiorno.</div>
             </div>
         </div>
     </div>
@@ -121,10 +127,10 @@ emerso dopo l'Unità nel 1861 e legato all'arretratezza storica del Meridione, c
         <div class="contenuto-grid">
             <div class="contenuto-card">
                 <div class="contenuto-card-text">La destra e la sinistra storica sono i due partiti che salirono al governo dell'unità d'Italia.
-La destra storica era formata dai cattolici fino al 1871 e dai monarchici e i rappresentanti erano per lo più proprietari terrieri del centro-nord.
-La destra governò fino al 1876 quando l'Italia raggiunse il pareggio di bilancio grazie al ministro Quintino Sella imponendo tasse uguali per tutti.
-La sinistra storica, invece era formata dai repubblicani e dagli anti cattolici e i rappresentanti erano per lo più professionisti, nuovi ceti emergenti e rappresentanti del sud.
-La sinistra salì al potere prima con Agostino De Pretis e poi con Francesco Crispi.</div>
+                    La destra storica era formata dai cattolici fino al 1871 e dai monarchici e i rappresentanti erano per lo più proprietari terrieri del centro-nord.
+                    La destra governò fino al 1876 quando l'Italia raggiunse il pareggio di bilancio grazie al ministro Quintino Sella imponendo tasse uguali per tutti.
+                    La sinistra storica, invece era formata dai repubblicani e dagli anti cattolici e i rappresentanti erano per lo più professionisti, nuovi ceti emergenti e rappresentanti del sud.
+                    La sinistra salì al potere prima con Agostino De Pretis e poi con Francesco Crispi.</div>
             </div>
         </div>
     </div>
@@ -138,17 +144,17 @@ La sinistra salì al potere prima con Agostino De Pretis e poi con Francesco Cri
         <div class="contenuto-grid">
             <div class="contenuto-card">
                 <div class="contenuto-card-text">Membro della sinistra storica.
-Appena salì al potere affrontò vari problemi ovvero:
-<br>
--Diritto di voto: salì dal 1.9% fino al 8.6%;
-<br>
--Analfabetismo: l'obbligo di istruzione fu prolungato fino alla terza elementare con la legge Coppino;
-<br>
--Fine dell'isolamento territoriale: firma la triplice alleanza;
-<br>
--Politica coloniale: colonizzazione dell'Eritrea e della Somalia;
-<br>
--Malattie da debellare: aumento l'igiene</div>
+                    Appena salì al potere affrontò vari problemi ovvero:
+                    <br>
+                    -Diritto di voto: salì dal 1.9% fino al 8.6%;
+                    <br>
+                    -Analfabetismo: l'obbligo di istruzione fu prolungato fino alla terza elementare con la legge Coppino;
+                    <br>
+                    -Fine dell'isolamento territoriale: firma la triplice alleanza;
+                    <br>
+                    -Politica coloniale: colonizzazione dell'Eritrea e della Somalia;
+                    <br>
+                    -Malattie da debellare: aumento l'igiene</div>
             </div>
         </div>
     </div>
@@ -162,12 +168,12 @@ Appena salì al potere affrontò vari problemi ovvero:
         <div class="contenuto-grid">
             <div class="contenuto-card">
                 <div class="contenuto-card-text">Salì al governo dopo De Pretis, l'obiettivo di questo governo era rafforzare lo stato.
-<br>
-Fece approvare una serie di leggi per i lavoratori.
-<br>
-Promulgò il codice Zanardelli.
-<br>
-Continuò la politica coloniale in Eritrea e Somalia.</div>
+                    <br>
+                    Fece approvare una serie di leggi per i lavoratori.
+                    <br>
+                    Promulgò il codice Zanardelli.
+                    <br>
+                    Continuò la politica coloniale in Eritrea e Somalia.</div>
             </div>
         </div>
     </div>
@@ -196,16 +202,16 @@ Continuò la politica coloniale in Eritrea e Somalia.</div>
         <div class="contenuto-grid">
             <div class="contenuto-card">
                 <div class="contenuto-card-text">Giolitti era un liberale di sinistra, attuò varie riforme tra cui:
-<br>
--Promosse una politica di accordo con le rappresentanze sindacali e politiche del movimento operaio;
-<br>
--Tutelò il lavoro di donne e bambini;
-<br>
--Statalizzò le ferrovie;
-<br>
--Statalizzò l'istruzione;
-<br>
--Attuò una politica coloniale.</div>
+                    <br>
+                    -Promosse una politica di accordo con le rappresentanze sindacali e politiche del movimento operaio;
+                    <br>
+                    -Tutelò il lavoro di donne e bambini;
+                    <br>
+                    -Statalizzò le ferrovie;
+                    <br>
+                    -Statalizzò l'istruzione;
+                    <br>
+                    -Attuò una politica coloniale.</div>
             </div>
         </div>
     </div>
@@ -222,6 +228,6 @@ Continuò la politica coloniale in Eritrea e Somalia.</div>
     <div class="footer-brand">Iossa Manuel Andrea</div>
 </footer>
 
-<script src="../script/scriptMaterie.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
