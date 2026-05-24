@@ -541,6 +541,7 @@
             .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
             footer { flex-direction: column; text-align: center; padding: 2rem 1.5rem; }
             .materiaEducazioneCivica-grid { grid-template-columns: 1fr; }
+            
         }
 
         /* ── argomento SECTION ── */
@@ -574,7 +575,6 @@
             line-height: 1.2;
         }
 
-        /* ── contenuto CARDS ── */
         .contenuto-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -806,7 +806,6 @@
             margin-bottom: 0.3rem;
         }
 
-        /* ── materiaEducazioneCivica CARDS ── */
         .materiaEducazioneCivica-grid {
             display: flex;
             flex-direction: column;
@@ -977,28 +976,15 @@
             line-height: 1.8;
             margin-bottom: 1.2rem;
         }
-
-        /* ── BOOTSTRAP COLLAPSE OVERRIDE ── */
-
-        /*
-         * Bootstrap JS usa la classe .collapse per nascondere e .show per mostrare.
-         * Siccome non importiamo il CSS di Bootstrap, definiamo noi .collapse.
-         * Su desktop sovrascriviamo tutto per mantenere il comportamento hover originale.
-         */
-
-        /* Definizione base di .collapse (necessaria perché non usiamo il CSS di Bootstrap) */
         .collapse { display: none; }
         .collapse.show { display: block; }
 
-        /* Su desktop: navbar sempre visibile, dropdown gestito da hover CSS */
         @media (min-width: 901px) {
-            /* Il menu principale è sempre visibile, indipendentemente da .show */
             .nav-links.collapse,
             .nav-links.collapse.show {
                 display: flex !important;
             }
 
-            /* Il dropdown torna al comportamento hover originale */
             .dropdown-menu.collapse,
             .dropdown-menu.collapse.show {
                 display: none !important;
@@ -1007,8 +993,40 @@
                 display: block !important;
             }
 
-            /* Nascondi hamburger su desktop */
             .hamburger { display: none !important; }
         }
+
+        @media (max-width: 768px) {
+        .progetto-galleria.double {
+            grid-template-columns: 1fr;
+        }
+
+        .galleria-item {
+            max-height: 85vw;
+        }
+
+        .galleria-item img {
+            max-height: 85vw;
+        }
+
+        .comp-grid {
+            flex-direction: column;
+        }
+
+        .progetto-body {
+            grid-template-columns: 1fr;
+        }
+
+        .page-hero {
+            padding: calc(var(--nav) + 2rem) 1.5rem 2rem;
+        }
+
+        section {
+            padding: 3rem 1.5rem;
+        }
+        .section-divider {
+            margin-bottom: 3rem;
+        }
+}
 
         
