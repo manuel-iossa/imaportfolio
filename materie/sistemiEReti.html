@@ -158,8 +158,37 @@
         <div class="contenuto-grid">
             <div class="contenuto-card">
                 <div class="contenuto-card-text">
-                    Metodo per aumentare la sicurezza, unico punto di contatto tra la LAN e la rete esterna.
+                    Il Firewall è un metodo per aumentare la sicurezza, unico punto di contatto tra la LAN e la rete esterna.
                     <br>
+                    Può essere costruito con l'hardware e il suo apposito software oppure usando delle fuznioni integrate nel router.
+                    <br>
+                    Il Firewall si divide in due tipi: 
+                    <br>
+                    -Ingress: controlla i collegamenti verso l'interno
+                    <br>
+                    -Egress: controlla il traffico generato dalla propria rete che va verso l'esterno
+                    <br>
+                    Il Firewall usa delle politiche di autorizzazione che possono essere di due tipi: 
+                    <br>
+                    -Whitelisting: viene accettato solo ciò che viene scritto nella white list
+                    <br>
+                    -Blacklisting: viene accettao solo ciò che non è scritto nella black list
+                    <br>
+                    Il Firewall è formato da: 
+                    <br>
+                    -Screening Router: fa filtraggio a livello 3 e leva gran parte del traffico che non ci interessa
+                    <br>
+                    -Application Gateway (Proxy): fa da mediatore tra client e server e serve per verificare le richieste del client
+                    <br>
+                    -Dual Homed Gateway: è un gateway con 2 schede di rete su 2 reti differenti
+                    <br>
+                    Il Firewall si divide in tre categorie: 
+                    <br>
+                    -Application Level Firewall: valuta il contenuto applicativo dei pacchetti
+                    <br>
+                    -Packet Filter Firewall: lavora a livello di rete e trasporto e fa un cotrollo solo sull'header IP
+                    <br>
+                    -Statefull Paket Inspection Firewall: agisce a livello trasporto e fa un controllo sul contenuto del pacchetto dati  
 
                 </div>
             </div>
@@ -175,7 +204,13 @@
         <div class="contenuto-grid">
             <div class="contenuto-card">
                 <div class="contenuto-card-text">
-                    Metodo per aumentare la sicurezza di un server che da servizi all'esterno della LAN.
+                    La DMZ è un metodo per aumentare la sicurezza di un server che da servizi all'esterno della LAN.
+                    <br>
+                    Ci sono due tipi di DMZ ovvero: 
+                    <br>
+                    -Vicolo Cieco: si realizza con un firewall a due porte, una porta verso la LAN e una porta verso la DMZ
+                    <br>
+                    -Zona Cuscinetto: si realizza con due firewall, un firewall tra la LAN e la DMZ e uno tra l'esterno e la DMZ
                 </div>
             </div>
         </div>
@@ -190,7 +225,23 @@
         <div class="contenuto-grid">
             <div class="contenuto-card">
                 <div class="contenuto-card-text">
-                    Infrastruttura di rete privata all'interno di una rete pubblica.
+                    Le VPN sono infrastruttura di rete privata all'interno di una rete pubblica.
+                    <br>
+                    Le VPN possono essere realizzate in tre modi: 
+                    <br>
+                    -Reti nascoste: si usano gli indirizzi IP privati
+                    <br>
+                    -Tunnel IP: i pacchetti vengono imbustati in altri pacchetti
+                    <br>
+                    -Tunnel IP Sicuto: i pacchetti prima di essere imbustati vengono cifrati
+                    <br>
+                    Le VPN in commercio si dividono in due tipi: 
+                    <br>
+                    -Remote Access VPN
+                    <br>
+                    -Site to Site VPN
+                    <br>
+                    Per quanto riguarda la sicurezza le VPN offrono: autenticazione, cifratura e tunneling (viene fatto con i protocolli IP Sec e SSL/TLS)
                 </div>
             </div>
         </div>
@@ -205,7 +256,17 @@
         <div class="contenuto-grid">
             <div class="contenuto-card">
                 <div class="contenuto-card-text">
-                    ...
+                    Le reti wireless sono un tipo di comunicazione che non avviene tramite cavi fisici.
+                    <br>
+                    Le reti wireless si dividono in: 
+                    <br>
+                    -WPAN: reti bluetooth e infrarossi
+                    <br>
+                    -WLAN: formate da wireless terminal e Access Point
+                    <br>
+                    -WMAN: formate da antenne omnidirezionali (point to multipoint) o bridge (point to point)
+                    <br>
+                    -WWAN
                 </div>
             </div>
         </div>
@@ -220,13 +281,66 @@
         <div class="contenuto-grid">
             <div class="contenuto-card">
                 <div class="contenuto-card-text">
-                    ...
+                    Le reti mobile sono delle infrastrutture di rete che permottono la comunicazione senza fili tra telefoni e altri dispositivi.
+                    <br>
+                    Il grande problema delle reti mobile era la mobilità e quindi il cambio costante di indirizzo IP da parte dei dispositivi, per risolvere ciò è stato introdotto l'Home Address, cioè un indirizzo IP il cui prefisso identifica la sottorete e il link di appartenenza.
+                    <br>
+                    Le reti mobile si basano sull'architettura Mobile IP che è formata da: 
+                    <br>
+                    -Mobile Host
+                    <br>
+                    -Home Address 
+                    <br>
+                    -Home Network 
+                    <br>
+                    -Home Agent 
+                    <br>
+                    -Correspondent Host 
+                    <br>
+                    -Foreign Network 
+                    <br>
+                    -Foreign Agent
+                    <br>
+                    -Care of Address
+                    <br>
+                    L'accesso a internte viene regolato tramite: 
+                    <br>
+                    -Base station (BS)
+                    <br>
+                    -Cella di copertura 
+                    <br>
+                    -Mobile User (MU)
+                    <br>
+                    -Mobile Switching Center (MSC)
+                    <br>
+                    Le reti mobile funzioano tramite antenne sparse nel territorio che offrono ampio raggio di copertura, quindi capita che il dispositivo mobile debba cambiare antenna e questa operazione si chiama handoff.
+                    <br>
+                    L'handoff funziona in questo modo: 
+                    <br>
+                    -La vecchia BS informa l'MSC che sta per avvenire un'handoff e fornisce la lista delle nuove BS 
+                    <br>
+                    -L'MSC alloca le risorse per la nuova BS
+                    <br>
+                    -La nuova BS alloca i canali radio per la nuova BS
+                    <br>
+                    -La nuova BS avverte all'MSC che è pronta per l'handoff e a sua volta lo comunica alla vecchia BS 
+                    <br>
+                    -La vecchia BS fa handoff 
+                    <br>
+                    -Il dispositivo e la nuova BS si scambiano dei messaggi per completare l'assegnazione
+                    <br>
+                    -Il dispositivo comunica alla nuova BS che l'handoff è completo, questa lo comunica alla MSC
+                    <br>
+                    -La MSC ridirezione le chiamate 
+                    <br>
+                    -La vecchia BS rilascia le risorse
+                    <br>
+                    Le più famose tipologie di reti mobile sono: 3G, 4G, 4G LTE e 5G
                 </div>
             </div>
         </div>
     </div>
  
-    <hr class="section-divider">
 
  
 </main>

@@ -351,12 +351,6 @@
             transition: all 0.2s;
         }
 
-        .tag:hover {
-            background: var(--primario);
-            color: #fff;
-            border-color: var(--primario);
-        }
-
         /* ── SKILL CARDS (competenze tecniche e soft) ── */
         #competenze { 
             border-top: 1px solid var(--bordi); 
